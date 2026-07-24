@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+
+body{
+    background: #070B17;
+    color: #fff;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header */
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: rgba(7,11,23,0.85);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.header .container{
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.logo img{
+    width: 45px;
+}
+
+.logo span {
+    color: #2D7DFF;
+}
+
+.navbar{
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a{
+    color: #b9c2d8;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.navbar a:hover, .navbar a.active{
+    color: #2D7DFF;
+}
+
+/* Sections Base Style */
+.page-content {
+    padding: 140px 0 80px;
+    text-align: center;
+}
+
+.page-content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-content p.subtitle {
+    color: #b9c2d8;
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+
+/* Grids for Cards / Elite / Downloads */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 20px;
+    padding: 35px 20px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(45, 125, 255, 0.4);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+/* Elite Members Specific */
+.member-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #2D7DFF;
+    box-shadow: 0 0 20px rgba(45,125,255,0.3);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.card .role {
+    color: #2D7DFF;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 700;
+    background: #2D7DFF;
+    color: white;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(45,125,255,0.4);
+}
+
+/* Hero Section for Index */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #2D7DFF;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #b9c2d8;
+    max-width: 600px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer{
+    padding: 25px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    color: #9ca6bf;
+    font-size: 14px;
+    background: #050812;
+}
